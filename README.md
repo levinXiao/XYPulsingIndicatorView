@@ -2,6 +2,12 @@
 
 这个一个 pusling分格的indicatorView 适用于全屏的等待视图 一般用户长时间的网络请求和加载
 
+show
+
+![loading](https://github.com/levinXiao/XYPulsingIndicatorView/blob/master/loading.png)
+
+![success](https://github.com/levinXiao/XYPulsingIndicatorView/blob/master/success.png)
+
 方法列表
 
 ```
