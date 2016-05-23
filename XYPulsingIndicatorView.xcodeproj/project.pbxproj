@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B83994721CF2D8DA00AD76DC /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = B83994701CF2D8DA00AD76DC /* success.png */; };
+		B83994731CF2D8DA00AD76DC /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = B83994711CF2D8DA00AD76DC /* loading.png */; };
 		B83A9EBC1CEF017B00440C47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EBB1CEF017B00440C47 /* main.m */; };
 		B83A9EBF1CEF017B00440C47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EBE1CEF017B00440C47 /* AppDelegate.m */; };
 		B83A9EC21CEF017B00440C47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EC11CEF017B00440C47 /* ViewController.m */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B83994701CF2D8DA00AD76DC /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
+		B83994711CF2D8DA00AD76DC /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		B83A9EB71CEF017B00440C47 /* XYPulsingIndicatorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYPulsingIndicatorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83A9EBB1CEF017B00440C47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B83A9EBD1CEF017B00440C47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		B83A9EAE1CEF017B00440C47 = {
 			isa = PBXGroup;
 			children = (
+				B83994701CF2D8DA00AD76DC /* success.png */,
+				B83994711CF2D8DA00AD76DC /* loading.png */,
 				B83A9EB91CEF017B00440C47 /* XYPulsingIndicatorView */,
 				B83A9EB81CEF017B00440C47 /* Products */,
 			);
@@ -68,10 +74,6 @@
 				B83A9EBE1CEF017B00440C47 /* AppDelegate.m */,
 				B83A9EC01CEF017B00440C47 /* ViewController.h */,
 				B83A9EC11CEF017B00440C47 /* ViewController.m */,
-				B83A9EC31CEF017B00440C47 /* Main.storyboard */,
-				B83A9EC61CEF017B00440C47 /* Assets.xcassets */,
-				B83A9EC81CEF017B00440C47 /* LaunchScreen.storyboard */,
-				B83A9ECB1CEF017B00440C47 /* Info.plist */,
 				B83A9EBA1CEF017B00440C47 /* Supporting Files */,
 			);
 			path = XYPulsingIndicatorView;
@@ -80,6 +82,10 @@
 		B83A9EBA1CEF017B00440C47 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B83A9EC61CEF017B00440C47 /* Assets.xcassets */,
+				B83A9ECB1CEF017B00440C47 /* Info.plist */,
+				B83A9EC81CEF017B00440C47 /* LaunchScreen.storyboard */,
+				B83A9EC31CEF017B00440C47 /* Main.storyboard */,
 				B83A9EBB1CEF017B00440C47 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -153,8 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83994731CF2D8DA00AD76DC /* loading.png in Resources */,
 				B83A9ECA1CEF017B00440C47 /* LaunchScreen.storyboard in Resources */,
 				B83A9EC71CEF017B00440C47 /* Assets.xcassets in Resources */,
+				B83994721CF2D8DA00AD76DC /* success.png in Resources */,
 				B852ACD51CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets in Resources */,
 				B83A9EC51CEF017B00440C47 /* Main.storyboard in Resources */,
 			);

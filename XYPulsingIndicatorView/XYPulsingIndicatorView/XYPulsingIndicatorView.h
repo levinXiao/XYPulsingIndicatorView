@@ -11,7 +11,6 @@
 @interface XYPulsingIndicatorView : UIView
 
 
-
 #pragma mark - show
 //显示indicator 默认不可点击动画范围外的消失 默认显示文字为@"请稍候..."
 +(void)show;
