@@ -56,9 +56,10 @@ show
 //显示成功
 - (void)showSuccessButtonClick {
     [XYPulsingIndicatorView show];
-    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [XYPulsingIndicatorView successWithText:@"成功" dismissDuration:1.0];
+        [XYPulsingIndicatorView successWithText:@"成功" dismissDuration:1.0 finish:(^{
+            [self.navigationController pushViewController:[SecondViewController new] animated:YES];
+        })];
     });
 }
 
