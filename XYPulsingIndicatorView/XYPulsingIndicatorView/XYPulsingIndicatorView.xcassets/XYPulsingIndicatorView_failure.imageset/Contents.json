@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "success@3x.png",
+      "filename" : "XYPulsingIndicatorView_loading_failure@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "success@3x-1.png",
+      "filename" : "XYPulsingIndicatorView_loading_failure@3x.png",
       "scale" : "3x"
     }
   ],

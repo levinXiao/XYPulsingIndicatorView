@@ -150,22 +150,22 @@ static void(^touchDismissBlock)();
 }
 
 +(void)successWithText:(NSString *)successText{
-    [self successWithText:nil dismissDuration:0];
+    [self successWithText:nil dismissDuration:0 finish:nil];
 }
 
-+(void)successWithText:(NSString *)successText dismissDuration:(float)duration{
-    [self successWithText:successText imageName:nil dismissDuration:duration];
++(void)successWithText:(NSString *)successText dismissDuration:(float)duration finish:(void(^)())finish{
+    [self successWithText:successText imageName:nil dismissDuration:duration finish:finish];
 }
 
-+(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration{
++(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish{
     if (!imageName || [imageName isEqualToString:@""]) {
-        [self successWithText:successText image:nil dismissDuration:duration];
+        [self successWithText:successText image:nil dismissDuration:duration finish:finish];
         return;
     }
-    [self successWithText:successText image:[UIImage imageNamed:imageName] dismissDuration:duration];
+    [self successWithText:successText image:[UIImage imageNamed:imageName] dismissDuration:duration finish:finish];
 }
 
-+(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration{
++(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish{
     if (!successText) {
         successText = @"成功";
     }
@@ -185,6 +185,9 @@ static void(^touchDismissBlock)();
     touchDismissBlock = nil;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self dismiss];
+        if (finish) {
+            finish();
+        }
     });
 }
 
@@ -193,22 +196,22 @@ static void(^touchDismissBlock)();
 }
 
 +(void)failWithText:(NSString *)failText{
-    [self failWithText:failText dismissDuration:0];
+    [self failWithText:failText dismissDuration:0 finish:nil];
 }
 
-+(void)failWithText:(NSString *)failText dismissDuration:(float)duration{
-    [self failWithText:failText imageName:nil dismissDuration:duration];
++(void)failWithText:(NSString *)failText dismissDuration:(float)duration finish:(void(^)())finish{
+    [self failWithText:failText imageName:nil dismissDuration:duration finish:finish];
 }
 
-+(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration{
++(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish{
     if (!imageName || [imageName isEqualToString:@""]) {
-        [self failWithText:failText image:nil dismissDuration:duration];
+        [self failWithText:failText image:nil dismissDuration:duration finish:finish];
         return;
     }
-    [self failWithText:failText image:[UIImage imageNamed:imageName] dismissDuration:duration];
+    [self failWithText:failText image:[UIImage imageNamed:imageName] dismissDuration:duration finish:finish];
 }
 
-+(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration{
++(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish{
     if (!failText) {
         failText = @"失败";
     }
@@ -229,6 +232,9 @@ static void(^touchDismissBlock)();
     touchDismissBlock = nil;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self dismiss];
+        if (finish) {
+            finish();
+        }
     });
 }
 

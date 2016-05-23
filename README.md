@@ -11,8 +11,6 @@ show
 方法列表
 
 ```
-@interface XYPulsingIndicatorView : UIView
-
 #pragma mark - show
 //显示indicator 默认不可点击动画范围外的消失 默认显示文字为@"请稍候..."
 +(void)show;
@@ -30,31 +28,30 @@ show
 
 +(void)successWithText:(NSString *)successText;
 
-+(void)successWithText:(NSString *)successText dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish;
 
 #pragma mark - 失败
 +(void)fail;
 
 +(void)failWithText:(NSString *)failText;
 
-+(void)failWithText:(NSString *)failText dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish;
 
 #pragma mark - dismiss
 //强制消失
 +(void)dismiss;
-
-@end
 ```
 
 用例:
+
 ```
 //显示成功
 - (void)showSuccessButtonClick {

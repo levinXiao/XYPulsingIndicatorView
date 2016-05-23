@@ -28,22 +28,22 @@
 
 +(void)successWithText:(NSString *)successText;
 
-+(void)successWithText:(NSString *)successText dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration;
++(void)successWithText:(NSString *)successText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish;
 
 #pragma mark - 失败
 +(void)fail;
 
 +(void)failWithText:(NSString *)failText;
 
-+(void)failWithText:(NSString *)failText dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText imageName:(NSString *)imageName dismissDuration:(float)duration finish:(void(^)())finish;
 
-+(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration;
++(void)failWithText:(NSString *)failText image:(UIImage *)image dismissDuration:(float)duration finish:(void(^)())finish;
 
 #pragma mark - dismiss
 //强制消失

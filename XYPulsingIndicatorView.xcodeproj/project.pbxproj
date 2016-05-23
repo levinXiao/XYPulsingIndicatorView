@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B83994721CF2D8DA00AD76DC /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = B83994701CF2D8DA00AD76DC /* success.png */; };
 		B83994731CF2D8DA00AD76DC /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = B83994711CF2D8DA00AD76DC /* loading.png */; };
+		B839947C1CF2E00E00AD76DC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B839947B1CF2E00E00AD76DC /* SecondViewController.m */; };
 		B83A9EBC1CEF017B00440C47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EBB1CEF017B00440C47 /* main.m */; };
 		B83A9EBF1CEF017B00440C47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EBE1CEF017B00440C47 /* AppDelegate.m */; };
 		B83A9EC21CEF017B00440C47 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9EC11CEF017B00440C47 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		B83994701CF2D8DA00AD76DC /* success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success.png; sourceTree = "<group>"; };
 		B83994711CF2D8DA00AD76DC /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		B839947A1CF2E00E00AD76DC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B839947B1CF2E00E00AD76DC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B83A9EB71CEF017B00440C47 /* XYPulsingIndicatorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYPulsingIndicatorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83A9EBB1CEF017B00440C47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B83A9EBD1CEF017B00440C47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 				B83A9EBE1CEF017B00440C47 /* AppDelegate.m */,
 				B83A9EC01CEF017B00440C47 /* ViewController.h */,
 				B83A9EC11CEF017B00440C47 /* ViewController.m */,
+				B839947A1CF2E00E00AD76DC /* SecondViewController.h */,
+				B839947B1CF2E00E00AD76DC /* SecondViewController.m */,
 				B83A9EBA1CEF017B00440C47 /* Supporting Files */,
 			);
 			path = XYPulsingIndicatorView;
@@ -175,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B839947C1CF2E00E00AD76DC /* SecondViewController.m in Sources */,
 				B83A9EC21CEF017B00440C47 /* ViewController.m in Sources */,
 				B83A9EBF1CEF017B00440C47 /* AppDelegate.m in Sources */,
 				B83A9ED51CEF01CF00440C47 /* XYPulsingIndicatorView.m in Sources */,
