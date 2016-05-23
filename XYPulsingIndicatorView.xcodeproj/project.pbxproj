@@ -13,6 +13,8 @@
 		B83A9EC51CEF017B00440C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A9EC31CEF017B00440C47 /* Main.storyboard */; };
 		B83A9EC71CEF017B00440C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83A9EC61CEF017B00440C47 /* Assets.xcassets */; };
 		B83A9ECA1CEF017B00440C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83A9EC81CEF017B00440C47 /* LaunchScreen.storyboard */; };
+		B83A9ED51CEF01CF00440C47 /* XYPulsingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = B83A9ED41CEF01CF00440C47 /* XYPulsingIndicatorView.m */; };
+		B852ACD51CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B852ACD41CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		B83A9EC61CEF017B00440C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83A9EC91CEF017B00440C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83A9ECB1CEF017B00440C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83A9ED31CEF01CF00440C47 /* XYPulsingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPulsingIndicatorView.h; sourceTree = "<group>"; };
+		B83A9ED41CEF01CF00440C47 /* XYPulsingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPulsingIndicatorView.m; sourceTree = "<group>"; };
+		B852ACD41CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XYPulsingIndicatorView.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		B83A9EB91CEF017B00440C47 /* XYPulsingIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				B83A9ED21CEF01B100440C47 /* XYPulsingIndicatorView */,
 				B83A9EBD1CEF017B00440C47 /* AppDelegate.h */,
 				B83A9EBE1CEF017B00440C47 /* AppDelegate.m */,
 				B83A9EC01CEF017B00440C47 /* ViewController.h */,
@@ -77,6 +83,16 @@
 				B83A9EBB1CEF017B00440C47 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B83A9ED21CEF01B100440C47 /* XYPulsingIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				B83A9ED31CEF01CF00440C47 /* XYPulsingIndicatorView.h */,
+				B83A9ED41CEF01CF00440C47 /* XYPulsingIndicatorView.m */,
+				B852ACD41CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets */,
+			);
+			path = XYPulsingIndicatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +126,7 @@
 				TargetAttributes = {
 					B83A9EB61CEF017B00440C47 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3P58B2GW28;
 					};
 				};
 			};
@@ -138,6 +155,7 @@
 			files = (
 				B83A9ECA1CEF017B00440C47 /* LaunchScreen.storyboard in Resources */,
 				B83A9EC71CEF017B00440C47 /* Assets.xcassets in Resources */,
+				B852ACD51CEF1D64007617F5 /* XYPulsingIndicatorView.xcassets in Resources */,
 				B83A9EC51CEF017B00440C47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +169,7 @@
 			files = (
 				B83A9EC21CEF017B00440C47 /* ViewController.m in Sources */,
 				B83A9EBF1CEF017B00440C47 /* AppDelegate.m in Sources */,
+				B83A9ED51CEF01CF00440C47 /* XYPulsingIndicatorView.m in Sources */,
 				B83A9EBC1CEF017B00440C47 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = XYPulsingIndicatorView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.XYPulsingIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +296,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = XYPulsingIndicatorView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyu.XYPulsingIndicatorView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +325,7 @@
 				B83A9ED01CEF017B00440C47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
